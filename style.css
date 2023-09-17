@@ -50,3 +50,58 @@ body {
 .search button img {
     width: 25px;
 }
+
+.search button:hover {
+    background: #d4dadb;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+.weather h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.col img {
+    width: 40px;
+    margin-right: -10px;
+    opacity: 0.8;
+}
+
+.hum-icon,
+.wind-icon {
+    filter: brightness(0) invert(1);
+}
+.humidity,
+.wind {
+    font-size: 2.1rem;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.text {
+    margin-top: 0px;
+    margin-left: 50px;
+    font-size: 0.9rem;
+    text-align: right;
+}
