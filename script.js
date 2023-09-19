@@ -1,4 +1,4 @@
-const apiKey = "acb57cef52cebf8f410cfa304fd4c9d9"
+const apiKey = "apiKey"
             const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
             const searchBox = document.querySelector(".search input")
@@ -46,6 +46,11 @@ const apiKey = "acb57cef52cebf8f410cfa304fd4c9d9"
 
             searchBtn.addEventListener("click", function(){
                 checkWeather(searchBox.value)
+            })
+            searchBox.addEventListener("keyup", function(e){
+                if (e.keyCode === 13){
+                    checkWeather(searchBox.value)
+                }
             })
             
            
